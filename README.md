@@ -114,6 +114,4 @@ db:dev:restart      - Restart dev DB and apply migrations
 db:test:restart     - Restart test DB and apply migrations
 ```
 
-## 📄 License
 
-This project is **UNLICENSED** and not intended for public use or redistribution.
