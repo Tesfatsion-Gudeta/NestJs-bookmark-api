@@ -7,6 +7,8 @@ services:
       POSTGRES_DB: nestjs_db
       POSTGRES_USER: nestjs_user
       POSTGRES_PASSWORD: 123
+    volumes:
+      - dev-db-data:/var/lib/postgresql/data
     networks:
       - freecodecamp
 
@@ -18,8 +20,14 @@ services:
       POSTGRES_DB: nestjs_db
       POSTGRES_USER: nestjs_user
       POSTGRES_PASSWORD: 123
+    volumes:
+      - test-db-data:/var/lib/postgresql/data
     networks:
-      - freecodecamp
+      - app-network
 
 networks:
-  freecodecamp:
+  app-network:
+
+volumes:
+  dev-db-data:
+  test-db-data:
