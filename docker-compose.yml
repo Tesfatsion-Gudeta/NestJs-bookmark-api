@@ -10,7 +10,7 @@ services:
     volumes:
       - dev-db-data:/var/lib/postgresql/data
     networks:
-      - freecodecamp
+      - app-network
 
   test-db:
     image: postgres:13
