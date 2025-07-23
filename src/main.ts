@@ -7,7 +7,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:5173',
-      'https://nestjs-bookmark-api-wloh.onrender.com',
+      'https://bookmark-frontend-va2n.vercel.app',
     ], // Allow your frontend origins
     credentials: true, // If you are sending cookies or auth headers
   });
