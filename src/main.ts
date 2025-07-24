@@ -7,9 +7,9 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:5173',
-      'https://bookmark-frontend-va2n.vercel.app',
-    ], // Allow your frontend origins
-    credentials: true, // If you are sending cookies or auth headers
+      'https://bookmark-frontend-rosy.vercel.app/',
+    ], 
+    credentials: true, 
   });
 
   app.useGlobalPipes(
