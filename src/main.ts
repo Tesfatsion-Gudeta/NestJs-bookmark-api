@@ -7,7 +7,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:5173',
-      'https://bookmark-frontend-rosy.vercel.app/',
+      'https://bookmark-frontend-rosy.vercel.app',
     ], 
     credentials: true, 
   });
